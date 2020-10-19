@@ -1,0 +1,13 @@
+Methods available:
+
+/transactions/api/v1.0/allTransactions?date?{YYYY-MM-DD}&merchantId={merchantId}
+# gets input from url parameters 'date' and merchandInput
+# returns JSON response with all transactions for given date
+
+/transactions/api/v1.0/netTotal?{YYYY-MM-DD}&merchantId={merchantId}
+# gets net total of non-void transactions for given date and given merchant
+# returns JSON object with sum and currency
+
+/transactions/api/v1.0/voidTransaction?transactionId={transactionId}&merchantId={merchantId}
+# voids a transaction given transaction id and merchant id
+# sends back success or failure message
